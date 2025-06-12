@@ -3,7 +3,9 @@ from pathlib import Path
 
 from flask import Flask, request, jsonify
 
-from src.extractor import fetch_html, parse_products
+# Import the extractor module from the same directory so that running
+# ``python src/app.py`` works without modifying ``PYTHONPATH``.
+from extractor import fetch_html, parse_products
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 app = Flask(__name__, static_folder=str(BASE_DIR / "static"), static_url_path="")
