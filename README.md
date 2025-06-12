@@ -39,3 +39,6 @@ python src/app.py
 
 Then open `http://localhost:5000/` and either provide a flyer URL or upload an
 HTML file. The extracted JSON will be displayed on the page.
+
+The project uses `requests` for downloading HTML and `beautifulsoup4` for
+parsing.
