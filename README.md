@@ -26,5 +26,16 @@ Install dependencies using pip:
 pip install -r requirements.txt
 ```
 
-The project uses `requests` for downloading HTML and `beautifulsoup4` for
-parsing.
+The project uses `requests` for downloading HTML, `beautifulsoup4` for parsing
+and `Flask` for a small web interface.
+
+## Web Interface
+
+Run the Flask application to try the extractor in your browser:
+
+```
+python src/app.py
+```
+
+Then open `http://localhost:5000/` and either provide a flyer URL or upload an
+HTML file. The extracted JSON will be displayed on the page.
