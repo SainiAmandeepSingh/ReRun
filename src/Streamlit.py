@@ -3,7 +3,6 @@ import os
 import runpy
 import sys
 
-
 def main() -> None:
     if len(sys.argv) >= 3 and sys.argv[1] == "run":
         path = sys.argv[2]
